@@ -16,7 +16,7 @@ func longestConsecutive(nums []int) int {
 
 	set := NewUnionSet(len(nums))
 	// 相比于遍历原数组，遍历哈希表避免
-	for num, _ := range m {
+	for num := range m {
 		if _, ok := m[num+1]; !ok {
 			continue
 		}
