@@ -71,7 +71,7 @@ func (t *Tree) deleteNode(node *TreeNode, value int) *TreeNode {
 		}
 
 		// 情况二：目标节点只有一个子节点
-		// 解法二：提拔该子节点提拔
+		// 解法二：提拔该子节点
 		if node.Left == nil {
 			return node.Right
 		} else if node.Right == nil {

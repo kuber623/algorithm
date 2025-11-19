@@ -183,6 +183,5 @@ func (t *Tree) updateHeight(node *TreeNode) {
 	if node == nil {
 		return
 	}
-
 	node.Height = 1 + max(t.height(node.Left), t.height(node.Right))
 }
